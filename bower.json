@@ -1,0 +1,19 @@
+{
+  "name": "rs-progress-bar",
+  "version": "0.0.0",
+  "authors": [
+    "Jigar Solanki <jigar234@gmail.com>"
+  ],
+  "description": "Element providing solution to no problem in particular.",
+  "keywords": "seed, polymer, web-components",
+  "main": "rs-progress-bar.html",
+  "license": "MIT",
+  "homepage": "https://github.com/Jigarsolanki/rs-progress-bar/",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3",
+    "polymer-test-tools": "Polymer/polymer-test-tools#~0.3.3"
+  }
+}
