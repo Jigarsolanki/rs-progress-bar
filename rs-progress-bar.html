@@ -1,21 +1,21 @@
 <link rel="import" href="../polymer/polymer.html">
 
-<polymer-element name="rs-progress-bar" constructor="RsProgressbar" attributes='fill type theme'>
+<polymer-element name="rs-progress-bar" constructor="RsProgressbar" attributes='fill type striped'>
   <template>
     <link rel="stylesheet" type="text/css" href="https://eafdbc63c97ce6bec9ef-b0a668e5876bef6fe25684caf71db405.ssl.cf1.rackcdn.com/v1-latest/canon.min.css">
     <div class="rs-progress">
       <div class="rs-progress-inner">
         <div class="rs-segment" style="width: {{ fill }}%">
-          <div class="rs-bar rs-status-{{ type }}"></div>
+          <div class="rs-bar rs-status-{{ type }} {{ striped ? 'rs-bar-striped': ''}} "></div>
         </div>
       </div>
     </div>
   </template>
   <script>
     Polymer('rs-progress-bar',{
-      fill: 10,
+      fill: 0,
       type: 'ok',
-      theme: 'striped'
+      striped: false
     });
   </script>
 </polymer-element>
